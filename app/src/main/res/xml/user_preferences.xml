@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreference
+        android:icon="@drawable/ic_baseline_color_lens_24"
+        android:key="user_theme"
+        android:summary="Some People Prefer Dark theme over light Theme. Its Your choice"
+        android:title="Change Theme For Your Layout"
+        app:defaultValue="0" />
+
+    <DropDownPreference
+        android:entries="@array/time_style"
+        android:entryValues="@array/time_style"
+        android:icon="@drawable/ic_baseline_time_style_24"
+        android:key="time_Style"
+        android:summary="The Are Two modes Of Date Styles Offered By Android.. Spinner and normal Clock Choose which you Prefer"
+        android:title="Time Style" />
+
+    <DropDownPreference
+        android:entries="@array/date_Style"
+        android:entryValues="@array/date_Style"
+        android:key="date_style"
+        android:summary="The Are Two modes Of Date Styles Offered By Android.. Spinner and normal Date Choose which you Prefer"
+        android:title="Date Style"
+        app:icon="@drawable/ic_baseline_date_range_24" />
+
+    <DropDownPreference
+        android:entries="@array/time_formats_human_readable"
+        android:entryValues="@array/time_formats_actual_values"
+        android:icon="@drawable/ic_baseline_av_timer_24"
+        android:key="time_format"
+        android:summary="The time Provided in the App are in terms of 24 Hour Format Your Free To change The Format"
+        android:title="Time Format" />
+
+    <SeekBarPreference
+        android:icon="@drawable/ic_baseline_timer_10_24"
+        android:key="before_alarm"
+        android:max="60"
+        android:summary="This Feature Allows You to Hear The Alarm Before The Actual Time set. The Bar below is in terms of minutes"
+        android:title="Pre alarmed"
+        app:min="0"
+        app:seekBarIncrement="5"
+        app:showSeekBarValue="true" />
+
+</PreferenceScreen>

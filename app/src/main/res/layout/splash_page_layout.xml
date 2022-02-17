@@ -1,0 +1,18 @@
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0BD668"
+    tools:context=".splash_page">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/baloo"
+        android:text="@string/splash_screen_name_logo"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="150sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

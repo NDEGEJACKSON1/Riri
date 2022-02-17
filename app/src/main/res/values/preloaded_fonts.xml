@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/arbutus</item>
+        <item>@font/armata</item>
+        <item>@font/autour_one</item>
+        <item>@font/baloo</item>
+        <item>@font/baloo_bhaina</item>
+        <item>@font/baloo_thambi</item>
+        <item>@font/bevan</item>
+        <item>@font/candal</item>
+        <item>@font/comfortaa_bold</item>
+        <item>@font/droid_sans</item>
+        <item>@font/krona_one</item>
+        <item>@font/montserrat</item>
+        <item>@font/montserrat_alternates</item>
+        <item>@font/montserrat_bold</item>
+        <item>@font/montserrat_subrayada</item>
+    </array>
+</resources>

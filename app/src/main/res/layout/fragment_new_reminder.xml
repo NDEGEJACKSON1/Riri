@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    tools:context=".new_reminder">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            tools:ignore="ScrollViewSize">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:backgroundTint="@color/primary_theme"
+                android:orientation="vertical"
+                android:textColorHint="@color/primary_theme"
+                app:boxStrokeColor="@color/primary_theme"
+                app:hintTextColor="@color/primary_theme">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baloo"
+                    android:hint="Title of the Event"
+                    android:textColor="@color/primary_theme"
+                    android:textColorHint="@color/primary_theme"
+                    tools:ignore="HardcodedText" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="vertical"
+                android:textColorHint="@color/primary_theme"
+                app:boxStrokeColor="@color/primary_theme"
+                app:hintTextColor="@color/primary_theme">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:fontFamily="@font/baloo"
+                    android:hint="Description of the Event"
+                    android:textColor="@color/primary_theme"
+                    tools:ignore="HardcodedText" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:backgroundTint="@color/primary_theme"
+                android:orientation="vertical"
+                android:textColorHint="@color/primary_theme"
+                app:boxStrokeColor="@color/primary_theme"
+                app:hintTextColor="@color/primary_theme">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/time_picker"
+                    android:tag="time_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baloo"
+                    android:hint="Time of The Event"
+                    android:onClick="set_datetime"
+                    android:focusable="false"
+                    android:inputType="time"
+                    android:textColor="@color/primary_theme"
+                    tools:ignore="HardcodedText" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="7dp"
+                android:backgroundTint="@color/primary_theme"
+                android:orientation="vertical"
+                android:textColorHint="@color/primary_theme"
+                app:boxStrokeColor="@color/primary_theme"
+                android:layout_weight="1"
+                app:hintTextColor="@color/primary_theme">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/date_picker"
+                    android:tag="date_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baloo"
+                    android:hint="Date Of The Event"
+                    android:onClick="set_datetime"
+                    android:focusable="false"
+                    android:inputType="date"
+                    android:textColor="@color/primary_theme"
+                    tools:ignore="HardcodedText" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:backgroundTint="@color/primary_theme"
+                android:fontFamily="@font/baloo"
+                android:text="Add Reminder"
+                android:onClick="get_userData"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

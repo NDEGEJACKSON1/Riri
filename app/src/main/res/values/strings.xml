@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Riri</string>
+    <string name="splash_screen_name_logo">Riri</string>
+
+    <string-array name="time_style">
+        <item>spinner</item>
+        <item>time</item>
+    </string-array>
+
+    <string-array name="date_Style">
+        <item>spinner</item>
+        <item>date</item>
+    </string-array>
+
+
+    <string-array name="time_formats_human_readable">
+        <item>12 Hour Time</item>
+        <item>24 Hour Time</item>
+    </string-array>
+    <string-array name="time_formats_actual_values">
+        <item>12</item>
+        <item>24</item>
+    </string-array>
+
+</resources>
